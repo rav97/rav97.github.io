@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rafał Isbrandt - CV</title>
+    <meta name="description" content="dokument CV wykonany w HTML i CSS na zaliczenie laboratorium z PAI">
+    <meta name="author" content="Rafał Isbrandt">
+    <link rel="icon" href="./img/cv_icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./img/avatar.png" title="To ja 😉 (no może byłbym gdybym miał korzystne zdjęcie)"
+                alt="avatar.png" />
+        </div>
+        <h1>
+            Rafał Isbrandt
+        </h1>
+        <section>
+            <p>
+                Witam! Jestem studentem Politechniki Poznańskiej na studiach II stopnia kierunku Informatyka. Pracuję
+                również aktywnie jako programista C#. Posiadam spore doświadczenie z zaskresu programowania w C# .NET
+                oraz SQL.
+                Naturalnie w trakcie studiów zapoznałem się z wieloma innymi technologiami oraz nabyłem gotowość do
+                rozwijania
+                swoich zdolności w coraz to nowszych. Niniejsze CV niech stanowi tego doskonały przykład, gdyż jest
+                formą praktycznej nauki języka HTML oraz CSS.
+            </p>
+
+            <a class="logo_link" href="https://www.facebook.com/Rav9708/" target="_blank"
+                title="Mój profil na facebooku">
+                <img src="./img/facebook_logo.png" alt="facebook_logo">
+            </a>
+            <a class="logo_link" href="https://github.com/rav97" target="_blank" title="Moje repozytorium github">
+                <img src="./img/github_logo.png" alt="github_logo">
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <article>
+            <h2>
+                O mnie
+            </h2>
+            <div class="about_me">
+                <div class="column">
+                    <h3>Dane osobowe</h3>
+                    <table class="personalData">
+                        <tr>
+                            <th>Imię i nazwisko</th>
+                            <th>Rafał Isbrandt</th>
+                        </tr>
+                        <tr>
+                            <th>Data urodzenia</th>
+                            <th>28 sierpień 1997</th>
+                        </tr>
+                        <tr>
+                            <th>Adres</th>
+                            <th>ul.Topolowa 5<br>64-000 Kościan</th>
+                        </tr>
+                        <tr>
+                            <th>Numer telefonu</th>
+                            <th>123456789</th>
+                        <tr>
+                            <th>Email</th>
+                            <th>rafal.isbrandt@student.put.poznan.pl</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <h3>Wykształcenie</h3>
+                    <ul>
+                        <li>
+                            <p>
+                                <div class="dateRange">Październik 2020 - Obecnie</div>
+                                Politechnika Poznańska: Informatyka II stopnia
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <div class="dateRange">Październik 2016 - Luty 2020</div>
+                                Politechnika Poznańska: Informatyka I stopnia
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <div class="dateRange">Wrzesień 2013 - Maj 2016</div>
+                                I Liceum Ogólnokształcące im. Oskara Kolberga w Kościanie
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>
+                Projekty
+            </h2>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/rav97/PZ_SpaceShooter" target="_blank">Cosmic Rush</a></h4>
+                </div>
+                <div class="descrition">
+                    <p>
+                        Prosta gra komputerowa z rodzaju Shoot'em Up, opracowana przy użyciu silnika Unity. 
+                        Rozgrywka oparta jest o losowo pojawiające się bonusy oraz fale przeciwników, które należy 
+                        kolejno pokonywać zdobywając za to punkty rankingowe. Po przekroczeniu określonych progów punktowych
+                        na planszy pojawia się silniejszy przeciwnik - boss którego pokonanie stanowi większe wyzwanie.
+                    </p>
+                    <p class="technologies">
+                        Unity 2D, C#, JSON, XML
+                    </p>
+                </div>
+            </section>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/rav97/PT_BeMyBrush" target="_blank">Be My Brush</a></h4>
+                </div>
+                <div class="descrition">
+                    <p>
+                        Aplikacja umożliwiająca rysowanie obrazów za pomocą ruchów ciała. Użytkownik przy użyciu specjalnie skonstruowanego
+                        wskaźnika - rękawiczki. Ma możliwość malowania obrazów przy wykorzystaniu ruchów własnego ciała przechwyconych w obrazie z kamery.
+                        Interfejs aplikacji przystosowany został do obsługi na odległość.
+                    </p>
+                    <p class="technologies">
+                        Python 3.6, OpenCV
+                    </p>
+                </div>
+            </section>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/rav97/P2P-Caller-MyCopy" target="_blank">P2P-Caller</a></h4>
+                </div>
+                <div class="descrition">
+                    <p>
+                        Prosty komunikator głosowy oparty na architekturze peer-to-peer oraz autorski protokół komunikacyjny.
+                        Program umożliwia wykonanie połączenia głosowego do innego użytkownika w obrębie danej sieci lokalnej
+                        oferując przy tym podstawową funkcjonalność systemów VoIP.
+                    </p>
+                    <p class="technologies">
+                        C#, Windows Forms, NAudio, Newtonsoft.Json, TCP, UDP
+                    </p>
+                </div>
+            </section>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/PUT-PTM/ParkSensors" target="_blank">Park Sensors</a></h4>
+                </div>
+                <div class="descrition">
+                    <p>
+                        Projekt i implementacja systemu czujników parkowania z wykorzystaniem mikrokontrolera STM32F4 Discovery oraz czujników odległości HC-SR04.
+                        Projekt zakładał przygotowanie prototypu urządzenia umożliwiającego ocenę odległości między pojazdem a potencjalną przeszkodą znajdującą się 
+                        w martwych punktach strefy cofania. Odległość od przeszkody sygnalizowana była przy użyciu wyświetlacza oraz sygnałów dźwiękowych.
+                    </p>
+                    <p class="technologies">
+                        C, STM32, Standard Peripheral Library for STM
+                    </p>
+                </div>
+            </section>
+        </article>
+        <article>
+            <h2>
+                Umiejętności
+            </h2>
+            <section class="skills">
+                <div class="column">
+                    <h3>Dobra znajomość</h3>
+                    <ul>
+                        <li>C# .NET</li>
+                        <li>WPF</li>
+                        <li>SQL</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Podstawowa znajomość</h3>
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>HTML5 i CSS3</li>
+                        <li>GIT</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lang">
+                <h3>Języki</h3>
+                <ul>
+                    <li>Polski - natywny</li>
+                    <li>Angielski - B2 (certyfikat ACERT)</li>
+                    <li>Niemiecki - A2</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Rafał Isbrandt 2020</p>
+        <p>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank"> www.flaticon.com</a></p>
+        <p>Image by <a
+                href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4715556"
+                target="_blank">Gerd
+                Altmann</a> from <a
+                href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4715556"
+                target="_blank">Pixabay</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
