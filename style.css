@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open Sans Condensed:300");
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-
 body {
-    margin: 0;
+    margin: 0 auto;
+    orientation: center;
     font-family: 'Open Sans Condensed';
     font-size: 18px;
     line-height: 1.5em;
-    min-width: 815px;
+    min-width: 825px;
     max-width: 1500px;
-  }
+}
 
 header {
     padding: 1% 17%;
@@ -21,139 +20,196 @@ header {
     background-repeat: no-repeat;
     color: #fff;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  }
-
-header img{
-      border-radius: 50%;
-      max-width: 250px;
-  }
-
-main{
-  margin: 0% 5%;
 }
 
-h2{
-  width: 100%;
-  text-align: left;
-  padding-left: 5px;
-  border-bottom: 2px solid gray;
-  line-height: 1.5em;
-  margin: 10px 0 5px 0;
-  text-transform: uppercase;
+header img {
+    border-radius: 50%;
+    max-width: 250px;
 }
 
-h3{
-
-}
-
-.logo_link img{
+.logo_link img {
     filter: invert(100%);
     border-radius: 0%;
     max-width: 30px;
     padding: 0px 5px;
-  }
-
-.column {
-  float: left;
-  width: 50%;
 }
 
-.about_me{
-  margin-left: 20px;
+.logo_link img:hover {
+    transform: scale(1.1);
 }
 
-.personalData{
-  word-wrap: break-word;
-  margin-left: 20px;
+main {
+    margin: 0% 5%;
 }
 
-.personalData tr th:nth-child(1){
-  text-align: right;
-  vertical-align: top;
-  font-weight: bold;
-}
-
-.personalData tr th:nth-child(1):after{
-  content: ":";
-}
-
-.personalData tr th:nth-child(2){
-  text-align: left;
-  font-weight: normal;
-  vertical-align: bottom;
-  padding-left: 20px;
-}
-
-.project, .skills {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.project .title {
-  color:rgb(216, 143, 8);
-  font-size: 24px;
-  text-align: center;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-.project .descrition {
-  -ms-flex: 0 0 75%;
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-.project .descrition p {
-  padding-left: 1em;
-  text-align: justify;
-}
-
-.dateRange{
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.skills, .lang{
-  margin-left: 20px;
+h2 {
+    width: 100%;
+    text-align: left;
+    padding-left: 5px;
+    border-bottom: 2px solid gray;
+    line-height: 1.5em;
+    margin: 25px 0 5px 0;
+    text-transform: uppercase;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-.technologies{
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 14;
+a:hover {
+    filter: brightness(70%)
 }
 
-.technologies::before{
-  content:"Technologie: "
+.column {
+    float: left;
+    width: 50%;
 }
 
-.skills ul{
-  list-style: none; 
+#about_me,
+#personalData,
+.experience {
+    margin-left: 20px;
 }
 
-.skills ul li::before{
-  content:"✔";
-  color: green;
-  padding-right: 5px;
+#about_me:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#personalData tr td:nth-child(1) {
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+#personalData tr td:nth-child(1):after {
+    content: ":";
+}
+
+#personalData tr td:nth-child(2) {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: bottom;
+    padding-left: 20px;
+}
+
+#workPlaces {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#workPlaces td,
+#workPlaces th {
+    border: 1px solid #bebebe;
+    padding: 15px;
+}
+
+#workPlaces td:nth-child(1) {
+    min-width: 200px;
+    text-align: center;
+}
+
+#workPlaces tr:nth-child(odd) {
+    background-color: #f7e0b7;
+}
+
+#workPlaces tr:hover {
+    background-color: #f7c872;
+}
+
+#workPlaces th {
+    padding: 12px 0px;
+    background-color: #d88f08;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+.project,
+#skills {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.project .title {
+    color: #d88f08;
+    font-size: 24px;
+    text-align: center;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.project .descrition {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.project .descrition p {
+    padding-left: 1em;
+    text-align: justify;
+}
+
+.dateRange {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.technologies {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14;
+    margin: 0;
+}
+
+.technologies::before {
+    content: "Technologie: "
+}
+
+#skills {
+    margin-left: 20px;
+}
+
+#skills .column {
+    float: left;
+    width: 33.33%;
+}
+
+#skills:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#skills ul {
+    list-style: none;
+    margin-left: -1.5em;
+}
+
+#skills ul li::before {
+    content: "✔";
+    color: green;
+    padding-right: 5px;
 }
 
 footer {
-  background: rgb(105, 66, 7);
-  background-position: bottom;
-  background-size: cover;
-  width: 100%;
-  text-align: right;
-  position: absolute;
-  color: #fff;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-  line-height: 50%;
-  min-width: 815px;
-  max-width: 1500px;
+    background: rgb(196, 127, 0);
+    background: linear-gradient(150deg, rgb(255, 195, 56) 0%, rgb(196, 127, 0) 100%);
+    width: 100%;
+    min-width: 825px;
+    max-width: 1500px;
+    text-align: right;
+    position: absolute;
+    color: #fff;
+    line-height: 50%;
+}
+
+footer p {
+    margin: 15px 30px;
 }
