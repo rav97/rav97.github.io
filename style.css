@@ -146,13 +146,13 @@ a:hover {
     max-width: 25%;
 }
 
-.project .descrition {
+.project .description {
     -ms-flex: 0 0 75%;
     flex: 0 0 75%;
     max-width: 75%;
 }
 
-.project .descrition p {
+.project .description p {
     padding-left: 1em;
     text-align: justify;
 }
@@ -174,6 +174,10 @@ a:hover {
 
 #skills {
     margin-left: 20px;
+}
+
+#skills p {
+    text-align: justify;
 }
 
 #skills .column {
