@@ -131,20 +131,20 @@
 
         <article>
             <h2>
-                Projekty komercyjne
+                Projekty zawodowe
             </h2>
             <section class='project'>
                 <div class='title'>
                     <h4>POP PC</h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Aplikacja desktopowa umożliwiająca ręczne zarządzanie danymi z systemu Programu Ochrony Płatności.
                         Widoki zaprojektowane w WPF w oparciu o wzorzec MVVM z wykorzystaniem stylów MaterialDesign dla XAML.
                         Aplikacja wykonuje operacje CRUD w oparciu o logikę biznesową firmy co umożliwiło kompleksowe zarządzanie fakturami.
                         Oprócz podstawowych mechanizmów CRUD aplikacja umożliwia import plików CSV, funkcje przypominania o zaplanowanych zadaniach, 
                         mechanizm kontroli aktualizacji, generowanie grafik certyfikatu uczestnicwa w programie POP oraz wiele innych.
-                        Rozwój aplikacji niejednokrotnie wymagał tworzenia customowych kontrolek, nadpisywania stylów i podobnych operacji "naginania" możliwości WPF do wኳasnych potrzeb.
+                        Rozwój aplikacji niejednokrotnie wymagał tworzenia customowych kontrolek, nadpisywania stylów i podobnych operacji "naginania" możliwości WPF do własnych potrzeb.
                     </p>
                     <p class="technologies">
                         C#, XAML, MVVM, Entity Framework 6, MSSQL
@@ -156,7 +156,7 @@
                 <div class='title'>
                     <h4>POP Monitoring Service</h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Aplikacja usługi odpowiedzialna za automatyczną realizację harmonogramów (operacji monitoringu) na fakturach w systemie POP.
                         Usługa, w elastycznie określanych godzinach dokonuje sprawdzania, czy na dany moment, dla spełnionych kryteriów dla faktur 
@@ -172,7 +172,7 @@
                 <div class='title'>
                     <h4>POP Import Service</h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Aplikacja usługi stanowiąca część integracji z większym klientem. Klient poprzez wiadomości email przekazuje pliki CSV 
                         z danymi nowo wystawionych faktur oraz obecnego stanu ich systemu. Usługa dokonuje importu oraz synchronizacji danych 
@@ -188,7 +188,7 @@
                 <div class='title'>
                     <h4>POP API</h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Implementacja Web API umożliwiająca mniejszym klientom wygrywanie faktur do systemu POP oraz podastawowe zarządzanie nimi.
                         Autoryzacja przy użyciu tokenów JWT oraz customowych nagłówków. Pozwala na wykonanie podstawowych operacji na fakturze za pominięciem kontaktu z operatorem systemu POP.
@@ -204,7 +204,7 @@
                 <div class='title'>
                     <h4>Kontomatik Library</h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Biblioteka konsumująca BankingAPI oraz LendingAPI od <a href="https://developer.kontomatik.com/api-doc/#introduction">Kontomatika</a>. 
                         Zaprojektowana w taki sposób aby zminimalizować konieczność implementowania wielokrotnych asychnronicznych odwołań po stronie aplikacji.
@@ -224,9 +224,54 @@
             </h2>
             <section class='project'>
                 <div class='title'>
-                    <h4><a href="https://github.com/rav97/PZ_SpaceShooter" target="_blank" title="Zobacz repozytorium">Cosmic Rush</a></h4>
+                    <h4><a href="https://github.com/rav97/WPF_MemeMaker" target="_blank" title="Zobacz repozytorium">WPF MemeMaker</a></h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
+                    <p>
+                        Aplikacja desktopowa służąca do tworzenia memów z wybranej grafiki. Na osobnej gałęzia opracowano rozwiązanie offline, oferujące podstawową funkcjonalność generatora memów.
+                        Pozwala na wgranie grafiki z komputera, dodanie pożądanej liczby podpisów, manipulację ich położeniem i rozmiarem oraz zapisaniem utworzonego mema na dysku. Rozwiązanie online 
+                        oferuje taką samą podstawową funkcjonalność, ale także rozszeszone zostało o połączenie z zdalnym API (MemeMaker API), w celu uzyskania dostępu do bazy memów i szablonów przez nie udostępnianych.
+                    </p>
+                    <p class="technologies">
+                        C#, WPF (MVVM), XAML, HttpClient
+                    </p>
+                </div>
+            </section>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/rav97/MemeMaker_API" target="_blank" title="Zobacz repozytorium">MemeMaker API</a></h4>
+                </div>
+                <div class="description">
+                    <p>
+                        Internetowe API umożliwiające zarządzanie bazą memów i szablonów. Utworzone do współpracy z aplikacją MemeMaker WPF (Online). Pozwala na dodawanie oraz pobieranie memów jak i szablonów, 
+                        pobieranie list z informacjami o posiadanych grafikach, zapisywanie informacji o ich wykorzystaniu itp. Na osobnych gałęziach opracowano wersję działającą synchronicznie oraz asynchronicznie 
+                        (wybór implementacji zależny od potrzeb). Całość została zaprojektowana zgodnie ze wzorcem Domain Driven Design oraz przetestowana przy użyciu testów integracyjnych xUnit.
+                    </p>
+                    <p class="technologies">
+                        C#, .NET 6, ASP.NET Core, MSSQL, EF Core, Swagger, Serilog, DDD Approach, xUnit
+                    </p>
+                </div>
+            </section>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/rav97/ExchangeRateAPI" target="_blank" title="Zobacz repozytorium">ExchangeRateAPI</a></h4>
+                </div>
+                <div class="description">
+                    <p>
+                        Internetowe API stanowiące wartstę pośredniczącą z API Europejskiego Banku Centralnego. Z każdym nowym zapytaniem poszerza lokalną bazę danych w celu przyśpieszenia przyszłych zapytań o te same dane. 
+                        Zapytanie składa się z podania par walutowych oraz okresu czasu. Dane te przekazywane są do API EXB, zwrócona odpowiedź zapisywana jest w lokalnej bazie API oraz jest konwertowana na pożądany format 
+                        w celu jego zwrócenia.
+                    </p>
+                    <p class="technologies">
+                        C#, ASP.NET Core 3.1, MSSQL, EF Core, Swagger, Serilog, xUnit
+                    </p>
+                </div>
+            </section>
+            <section class='project'>
+                <div class='title'>
+                    <h4><a href="https://github.com/rav97/PG_CosmicRush" target="_blank" title="Zobacz repozytorium">Cosmic Rush</a></h4>
+                </div>
+                <div class="description">
                     <p>
                         Prosta gra komputerowa z rodzaju Shoot'em Up, opracowana przy użyciu silnika Unity. Rozgrywka oparta jest o losowo pojawiające się bonusy oraz fale przeciwników, które należy kolejno pokonywać zdobywając za to punkty rankingowe. Po przekroczeniu określonych
                         progów punktowych na planszy pojawia się silniejszy przeciwnik - boss którego pokonanie stanowi większe wyzwanie.
@@ -240,7 +285,7 @@
                 <div class='title'>
                     <h4><a href="https://github.com/rav97/PT_BeMyBrush" target="_blank" title="Zobacz repozytorium">Be My Brush</a></h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Aplikacja umożliwiająca rysowanie obrazów za pomocą ruchów ciała. Użytkownik przy użyciu specjalnie skonstruowanego wskaźnika - rękawiczki. Ma możliwość malowania obrazów przy wykorzystaniu ruchów własnego ciała przechwyconych w obrazie z kamery. Interfejs
                         aplikacji przystosowany został do obsługi na odległość.
@@ -252,23 +297,9 @@
             </section>
             <section class='project'>
                 <div class='title'>
-                    <h4><a href="https://github.com/rav97/P2P-Caller-MyCopy" target="_blank" title="Zobacz repozytorium">P2P-Caller</a></h4>
-                </div>
-                <div class="descrition">
-                    <p>
-                        Prosty komunikator głosowy oparty na architekturze peer-to-peer oraz autorski protokół komunikacyjny. Program umożliwia wykonanie połączenia głosowego do innego użytkownika w obrębie danej sieci lokalnej oferując przy tym podstawową funkcjonalność systemów
-                        VoIP.
-                    </p>
-                    <p class="technologies">
-                        C#, Windows Forms, NAudio, Newtonsoft.Json, TCP, UDP
-                    </p>
-                </div>
-            </section>
-            <section class='project'>
-                <div class='title'>
                     <h4><a href="https://github.com/PUT-PTM/ParkSensors" target="_blank" title="Zobacz repozytorium">Park Sensors</a></h4>
                 </div>
-                <div class="descrition">
+                <div class="description">
                     <p>
                         Projekt i implementacja systemu czujników parkowania z wykorzystaniem mikrokontrolera STM32F4 Discovery oraz czujników odległości HC-SR04. Projekt zakładał przygotowanie prototypu urządzenia umożliwiającego ocenę odległości między pojazdem a potencjalną
                         przeszkodą znajdującą się w martwych punktach strefy cofania. Odległość od przeszkody sygnalizowana była przy użyciu wyświetlacza oraz sygnałów dźwiękowych.
@@ -284,10 +315,17 @@
                 Umiejętności
             </h2>
             <section id="skills">
+
+                <p>
+                    Poniżej znajduje się lista z ogólnym wykazem nabytych umiejętności. Oczywiście poziom ich znajomości jest rzeczą czysto subiektywną i mocno zależny od kontekstu - przykładowo "dobra znajomość" 
+                    nie oznacza zdolności do natychmiastowego rozwiązania każdego problemu w danej dziedzinie, a poziom obycia w niej i zdolność do zbadania problemu w celu jego rozwiązania. Od siebie mogę jedynie 
+                    dodać chęć do dalszego rozwijania swoich zdolności, nauki nowych rzeczy i fakt, że jak dotąd nikt nie narzekał na efekty czy czas mojej pracy bez względu na poziom umiejętności w danej dziedzinie.
+                </p>
+
                 <div class="column">
                     <h3>Dobra znajomość</h3>
                     <ul>
-                        <li>C# .NET</li>
+                        <li>C#/.NET</li>
                         <li>WPF</li>
                         <li>SQL</li>
                         <li>Unity</li>
@@ -300,6 +338,7 @@
                         <li>Python</li>
                         <li>HTML5 i CSS3</li>
                         <li>GIT</li>
+                        <li>PHP</li>
                     </ul>
                 </div>
                 <div class="column">
